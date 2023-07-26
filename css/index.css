@@ -1,0 +1,14 @@
+header
+{
+  float:left;
+}
+
+nav
+{
+  float:right;
+}
+
+.limpiador
+{
+  clear:both;
+}
