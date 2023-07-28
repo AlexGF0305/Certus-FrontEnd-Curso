@@ -343,19 +343,24 @@ p{
 }
 
 .footer{
-    padding: 100px 100px;
-    background-color: #000000;
-    
-
+    padding: 30px 100px;
+    background-color: #f7704a;
 }
-
+.footer a:hover {
+    color: #fff;
+}
 .footer-content{
     display: flex;
-    
     justify-content: space-between;
-
+    color: #fff;
 }
-
+.payment-logos {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.payment-logos i {
+    margin: 0 1px;
+}
 .link h3{
     font-size: 18px;
     color: #e1e1e1;
@@ -472,19 +477,3 @@ p{
     .blog-1{
         padding: 0;
     }
-    .footer{
-        padding: 30;
-    }
-
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    
-
-
-
-
-
-}
