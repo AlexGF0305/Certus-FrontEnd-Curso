@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+
+body{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(170, 165, 165, 0.7),
+        rgba(170, 165, 165, 0.7)),
+        url(images/png.png);
+}
+
+form{
+    background-color: #0d0e0d7a;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+label{
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px;
+    
+}
+
+input, textarea{
+    text-transform: uppercase;
+    padding: 17px 25px ;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: aliceblue;
+    border:none;
+    color:#60df6c;
+    outline: none;
+}
+
+input::placeholder ,textarea::placeholder{
+    color: #b5cab6;
+}
+
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.form-txt a{
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+
+
+}
+
+.btn-1 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #f4f7f4;
+    border: 0;
+    border-radius: 25px;
+    background-color: #62b35e;
+    box-shadow: 0 0 20px rgba(160, 226, 154, 0.4);
+    cursor: pointer;
+}
+
+.btn-2{
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: #62b35e;
+    border-radius: 25px;
+    border: 0;
+    box-shadow: 0 0 20px rgba(160, 226, 154, 0.4);
+
+}
+
+.btn:hover{
+    background-color: #50e04b;
+
+}
+
+@media(max-width:991px){
+
+    body{
+        padding: 30px;
+
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input{
+        padding: 15px 10px;
+    }
+}
