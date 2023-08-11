@@ -1,3 +1,5 @@
+// Se asigna una funcion para que salga una ventana emergente validando los datos
+
 function Enviar() {
     var nombre = document.getElementById("txtName").value;
     var telefono = document.getElementById("txtTelefono").value;
