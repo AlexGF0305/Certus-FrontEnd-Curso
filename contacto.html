@@ -14,16 +14,16 @@
         <div class="input-group">
 
             <label for="name">nombre:</label>
-            <input type="text" name="name" id="name" placeholder="Ingrese su nombre">
+            <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre" id="txtName">
 
             <label for="phone">telefono:</label>
-            <input type="telefono" name="phone" id="phone" placeholder="Ingrese su teléfono">
+            <input type="text" name="phone" id="telefono" placeholder="Ingrese su teléfono" id="txtTelefono">
 
             <label for="email">email:</label>
-            <input type="email" name="email" id="email" placeholder="Ingrese un correo válido">
+            <input type="text" name="email" id="email" placeholder="Ingrese un correo válido" id="txtEmail">
 
             <label for="message">mensaje:</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="message"></textarea>
+            <textarea name="message"  cols="30" rows="5" placeholder="Dejanos un mensaje" id="Txtmensaje"></textarea>
 
             <div class="form-txt">
                 <a href="#">politica de privaciadad</a>
@@ -31,7 +31,8 @@
             </div>
 
            
-            <input  class="btn-1"  type="submit" value="enviar" >
+            <button onclick="lecturaDatos()" class="btn-1">Enviar</button>
+
 
            <a href="index.html" class="btn-2">regresar</a>
             
@@ -43,6 +44,6 @@
     </form>
 
 
-
+    <script src="contacto.js"></script>
 </body>
 </html>

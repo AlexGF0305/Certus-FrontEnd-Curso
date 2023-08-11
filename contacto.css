@@ -85,6 +85,8 @@ input::placeholder ,textarea::placeholder{
     background-color: #62b35e;
     box-shadow: 0 0 20px rgba(160, 226, 154, 0.4);
     cursor: pointer;
+    padding: 15px 20px;
+    margin-bottom: 10px;
 }
 
 .btn-2{
@@ -97,7 +99,8 @@ input::placeholder ,textarea::placeholder{
     border-radius: 25px;
     border: 0;
     box-shadow: 0 0 20px rgba(160, 226, 154, 0.4);
-
+    padding: 15px 20px;
+    margin-top: 10px;
 }
 
 .btn:hover{
