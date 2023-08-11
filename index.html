@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare</title>
-    <link rel="stylesheet" href="style.css"> <!--se linkea el index con los estilos css-->
-    <link rel="stylesheet" href="contacto.html"> <!--se linkea el index con el formulario-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
 </head>
 
 <body>
-    <header class="header" > <!--se creo la clase header -->
+    <header class="header" >
 
         <div class="menu " >
-            <a href="#header-content" class="logo"><img src="images/logodog2.png" class="logo" alt="PetCare"></a> <!--se agrega una imagen dentro de la clase logo-->
+            <a href="#header-content" class="logo"><img src="images/logodog2.png" class="logo" alt="PetCare"></a>
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt=""> <!--se agrega una imagen para el menu-->
+                <img src="images/menu.png" class="menu-icono" alt="">
             </label>
 
-            <nav class="navbar" > <!--se enlaza el navbar con las secciones de la pagina-->
+            <nav class="navbar" >
                 <ul>
                     <li><a href="#header-content" >PETCARE</a></li> 
-                    <li><a href="#alimento" >ALIMENTO</a></li>
+                    <li><a href="#coffee" >ALIMENTO</a></li>
                     <li><a href="#servicios">CATEGORIAS</a></li>
                     <li><a href="#camas">CAMAS</a></li>
                     <li><a href="#juguetes">JUGUETES</a></li>
@@ -35,7 +36,7 @@
 
         </div>
 
-        <div class="header-content container" id="header-content"> <!--se crea la clase de contenidos del header-->
+        <div class="header-content container" id="header-content">
             <h1>PETCARE</h1>
             
             <p>Bienvenido a PetCare, tu paraíso de juguetes para mascotas. 
@@ -50,17 +51,17 @@
     </header>
 
 
-    <section class="alimento" id="alimento"> <!--se crea la seccion de alimento asignandole un id para poder enlazarlo con el navbar-->
-        <img class="alimento-img"src="images/bg2.png" alt=""> <!--se hace uso de una imagen-->
-        <div class="alimento-content container">
+    <section class="coffee" id="coffee"> 
+        <img class="coffee-img"src="images/bg2.png" alt="">
+        <div class="coffe-content container">
             <h2>alimento</h2>
             <p class="text-p">Alimentar bien a tus mascotas es de vital 
                 importancia para su salud y bienestar. Una dieta adecuada
                  proporciona los nutrientes necesarios para mantener su energía, 
                  fortalecer su sistema inmunológico y mantener un peso saludable. </p>
 
-            <div class="alimento-group">
-                <div class="alimento-1">
+            <div class="coffee-group">
+                <div class="coffee-1">
                     <img src="images/c1.png" alt="" >
                     <h3>HILLS</h3>
                     <p>
@@ -69,7 +70,7 @@
                     <a href="#" class="btn-1">informacion</a>
                 </div>
 
-                <div class="alimento-1">
+                <div class="coffee-1">
                     <img src="images/c2.png" alt="">
                     <h3>NUTRAM</h3>
                     <p>
@@ -78,7 +79,7 @@
                     <a href="#" class="btn-1">informacion</a>
                 </div>
 
-                <div class="alimento-1">
+                <div class="coffee-1">
                     <img src="images/c3.png" alt="">
                     <h3>TASTE OF THE WILD</h3>
                     <p>
@@ -95,7 +96,7 @@
         </div>
     </section>
 
-    <main class="servicios" id="servicios"> <!--se crea la clase servicios-->
+    <main class="servicios" id="servicios">
         <div class="servicios-content container">
 
             <h2>CATEGORIAS</h2>
@@ -125,7 +126,7 @@
 
     </main>
 
-    <section class="general"> <!--se crea la seccion general que contiene la parte de camas  -->
+    <section class="general">
         <div class="general-1" id="camas">
             <h2>CAMAS</h2>
             <p>
@@ -156,7 +157,7 @@
     </section>
 
 
-    <section class="blog " id="blog"> <!--se crea la seccion de blog-->
+    <section class="blog " id="blog">
         <h2>BLOG</h2>
         
 
@@ -201,35 +202,89 @@
        
 
     </section>
-    <footer class="footer"> <!--se crea la seccion de footer-->
-        <div class="footer-content container">
-        <div class="link">
-             <h4>Llámanos al: (01)707-0000 / 970-403-517
-                <br>Escríbenos a: atencionalcliente@petcare.pe
-                <br>Ubícanos en: Av. Santiago de Surco 4717, Surco
-             </h4>
-             <br>
-             <div class="footer-container">
-                <h3>Aceptamos pagos con:</h3>
-                <div class="payment-logos">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-cc-diners-club"></i>
-                </div>
+        <!-- Footer -->
+    <footer class="text-center text-white">
+            <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" style="background-color: #f3a48e">
+              <!-- Left -->
+            <div class="me-5 d-none d-lg-block"> 
+                <span>Redes sociales:</span>
             </div>
-        </div>
-            <div class="link">
-                    <div>
-                        <h3>Síguenos en redes sociales:</h3>
-                            <li><a href="https://www.facebook.com/tu_pagina" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                            <li><a href="https://www.twitter.com/tu_pagina" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="https://www.instagram.com/tu_pagina" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <!-- Left -->
+              <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+              <!-- Right -->
+        </section>
+            <!-- Section: Social media -->
+        
+            <!-- Section: Links  -->
+        <section class="container1">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+            <div class="row mt-3">
+                  <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>PETCARE
+                    </h6>
+                    <p>
+                        "Hasta que no hayas amado a un animal,una parte de tu alma permanecerá dormida"
+                        Anatole France
+                    </p>
                     </div>
-                    <p>&copy; 2023 PetCare - Todos los derechos reservados.</p>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            PETS:
+                        </h6>
+                    <p>
+                      <a href="#!" class="text-reset">Perros</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Gatos</a>
+                    </p>
+                    <p>
+                      <a href="#!" class="text-reset">Otros</a>
+                    </p>
             </div>
+                  <!-- Grid column -->
+          
+                  <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> 
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">CONTACTANOS:</h6>
+                    <p><i class="fas fa-home me-3"></i>Av. Santiago de Surco 4717, Surco</p>
+                    <p><i class="fas fa-envelope me-3"></i>atencionalcliente@petcare.pe</p>
+                    <p><i class="fas fa-phone me-3"></i> (01)707-0000 / 970-403-517</p>
+            </div>
+                  <!-- Grid column -->
+            </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+            <!-- Section: Links  -->
+          
+            <!-- Copyright -->
+        <div class="text-center p-2">
+              © 2023 Copyright:
+            <a class="text-reset fw-bold" href="">petcare.com</a>
         </div>
+            <!-- Copyright -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -148,17 +148,17 @@ body{
     background-color: #ce967b;
 }
 
-.alimento{
+.coffee{
     padding: 100px 0;
     background-color: #f0bfb1;
     position: relative;
 }
 
-.alimento-content {
+.coffe-content {
     text-align: center;
 }
 
-.alimento-content h2{
+.coffe-content h2{
     font-size: 55px;
     line-height: 70px;
     color: #323337;
@@ -175,27 +175,27 @@ body{
 
 }
 
-.alimento-group{
+.coffee-group{
     display: flex ;
     justify-content: space-between;
     margin-bottom: 50px;
 
 }
 
-.alimento-1{
+.coffee-1{
     padding: 0 25px;
 }
-.alimento-1 img{
+.coffee-1 img{
     width: 200px;
 }
 
-.alimento-img {
+.coffee-img {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.alimento-1 h3{
+.coffee-1 h3{
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
@@ -339,8 +339,16 @@ p{
     color: #323337;
 
 }
+/*  */
+.text-center{
+    background-color: #fcbead;
 
-.footer{
+}
+.container1{
+    background-color: #fcbead;
+    color: white;
+} 
+/* .footer{
     padding: 30px 100px;
     background-color: #f7704a;
 }
@@ -370,7 +378,7 @@ p{
     color: #c5c5c5;
     display: block;
     margin-bottom: 15px;
-}
+} */
 
 
 
