@@ -6,37 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contacto.html">
+    <link rel="stylesheet" href="style.css"> <!--se linkea el index con los estilos css-->
+    <link rel="stylesheet" href="contacto.html"> <!--se linkea el index con el formulario-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 
 <body>
-    <header class="header" >
-
-        <div class="menu " >
-            <a href="#header-content" class="logo"><img src="images/logodog2.png" class="logo" alt="PetCare"></a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
-            </label>
-
-            <nav class="navbar" >
-                <ul>
-                    <li><a href="#header-content" >PETCARE</a></li> 
-                    <li><a href="#coffee" >ALIMENTO</a></li>
-                    <li><a href="#servicios">CATEGORIAS</a></li>
-                    <li><a href="#camas">CAMAS</a></li>
-                    <li><a href="#juguetes">JUGUETES</a></li>
-                    <li><a href="#blog">BLOG</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
+    <!-- BOOTSTRAP Navbar (no mover) AC-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f7704a;" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">PETCARE</a>
+                <img src="images/logodog2.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#alimento">ALIMENTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#camas">CAMAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#camas">JUGUETES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html" ><strong>CONTACTANOS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html" ><strong>TIENDA</strong></a>
+                    </li>
                 </ul>
-            </nav>
-
+            </div>
         </div>
+    </nav>
 
-        <div class="header-content container" id="header-content">
+    <header class="header" >
+        <div class="header-content container" id="header-content"> <!--se crea la clase de contenidos del header-->
             <h1>PETCARE</h1>
             
             <p>Bienvenido a PetCare, tu paraíso de juguetes para mascotas. 
@@ -51,17 +65,17 @@
     </header>
 
 
-    <section class="coffee" id="coffee"> 
-        <img class="coffee-img"src="images/bg2.png" alt="">
-        <div class="coffe-content container">
+    <section class="alimento" id="alimento"> <!--se crea la seccion de alimento asignandole un id para poder enlazarlo con el navbar-->
+
+        <div class="alimento-content container">
             <h2>alimento</h2>
             <p class="text-p">Alimentar bien a tus mascotas es de vital 
                 importancia para su salud y bienestar. Una dieta adecuada
                  proporciona los nutrientes necesarios para mantener su energía, 
                  fortalecer su sistema inmunológico y mantener un peso saludable. </p>
 
-            <div class="coffee-group">
-                <div class="coffee-1">
+            <div class="alimento-group">
+                <div class="alimento-1">
                     <img src="images/c1.png" alt="" >
                     <h3>HILLS</h3>
                     <p>
@@ -70,7 +84,7 @@
                     <a href="#" class="btn-1">informacion</a>
                 </div>
 
-                <div class="coffee-1">
+                <div class="alimento-1">
                     <img src="images/c2.png" alt="">
                     <h3>NUTRAM</h3>
                     <p>
@@ -79,7 +93,7 @@
                     <a href="#" class="btn-1">informacion</a>
                 </div>
 
-                <div class="coffee-1">
+                <div class="alimento-1">
                     <img src="images/c3.png" alt="">
                     <h3>TASTE OF THE WILD</h3>
                     <p>
@@ -96,7 +110,7 @@
         </div>
     </section>
 
-    <main class="servicios" id="servicios">
+    <main class="servicios" id="servicios"> <!--se crea la clase servicios-->
         <div class="servicios-content container">
 
             <h2>CATEGORIAS</h2>
@@ -126,7 +140,7 @@
 
     </main>
 
-    <section class="general">
+    <section class="general"> <!--se crea la seccion general que contiene la parte de camas  -->
         <div class="general-1" id="camas">
             <h2>CAMAS</h2>
             <p>
@@ -157,7 +171,7 @@
     </section>
 
 
-    <section class="blog " id="blog">
+    <section class="blog " id="blog"> <!--se crea la seccion de blog-->
         <h2>BLOG</h2>
         
 
@@ -202,90 +216,91 @@
        
 
     </section>
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="text-center text-white">
-            <!-- Section: Social media -->
+    <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" style="background-color: #f3a48e">
-              <!-- Left -->
-            <div class="me-5 d-none d-lg-block"> 
-                <span>Redes sociales:</span>
-            </div>
-              <!-- Left -->
-              <!-- Right -->
-            <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-              <!-- Right -->
+      <!-- Left -->
+        <div class="me-5 d-none d-lg-block"> 
+            <span>Redes sociales:</span>
+        </div>
+      <!-- Left -->
+      <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+             </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+      <!-- Right -->
         </section>
-            <!-- Section: Social media -->
-        
-            <!-- Section: Links  -->
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
         <section class="container1">
             <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
+        <!-- Grid row -->
             <div class="row mt-3">
-                  <!-- Grid column -->
+          <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>PETCARE
-                    </h6>
-                    <p>
-                        "Hasta que no hayas amado a un animal,una parte de tu alma permanecerá dormida"
-                        Anatole France
-                    </p>
-                    </div>
-                  <!-- Grid column -->
-          
-                  <!-- Grid column -->
+            <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>PETCARE
+                </h6>
+            <p>
+                "Hasta que no hayas amado a un animal,una parte de tu alma permanecerá dormida"
+                Anatole France
+            </p>
+            </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            PETS:
-                        </h6>
-                    <p>
-                      <a href="#!" class="text-reset">Perros</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Gatos</a>
-                    </p>
-                    <p>
-                      <a href="#!" class="text-reset">Otros</a>
-                    </p>
-            </div>
-                  <!-- Grid column -->
-          
-                  <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> 
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold mb-4">CONTACTANOS:</h6>
-                    <p><i class="fas fa-home me-3"></i>Av. Santiago de Surco 4717, Surco</p>
-                    <p><i class="fas fa-envelope me-3"></i>atencionalcliente@petcare.pe</p>
-                    <p><i class="fas fa-phone me-3"></i> (01)707-0000 / 970-403-517</p>
-            </div>
-                  <!-- Grid column -->
-            </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-            <!-- Section: Links  -->
-          
-            <!-- Copyright -->
-        <div class="text-center p-2">
-              © 2023 Copyright:
-            <a class="text-reset fw-bold" href="">petcare.com</a>
+            <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                    PETS:
+                </h6>
+            <p>
+              <a href="#!" class="text-reset">Perros</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Gatos</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Otros</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"> 
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">CONTACTANOS:</h6>
+            <p><i class="fas fa-home me-3"></i>Av. Santiago de Surco 4717, Surco</p>
+            <p><i class="fas fa-envelope me-3"></i>atencionalcliente@petcare.pe</p>
+            <p><i class="fas fa-phone me-3"></i> (01)707-0000 / 970-403-517</p>
+          </div>
+          <!-- Grid column -->
         </div>
-            <!-- Copyright -->
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-2">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="">petcare.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>

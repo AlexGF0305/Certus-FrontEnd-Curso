@@ -148,23 +148,33 @@ body{
     background-color: #ce967b;
 }
 
-.coffee{
-    padding: 100px 0;
+.alimento{
+    /*padding: 100px 0;
     background-color: #f0bfb1;
-    position: relative;
+    position: relative;*/
+    
+    background-color: #f0bfb1 ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+
 }
 
-.coffe-content {
+.alimento-content {
     text-align: center;
 }
 
-.coffe-content h2{
+.alimento-content h2{
     font-size: 55px;
     line-height: 70px;
     color: #323337;
     text-transform: uppercase;
     padding: 0 250px;
     margin-bottom: 15px;
+    margin-top: 30px;
+    padding: 0 30px;
 }
 
 .text-p {
@@ -175,27 +185,30 @@ body{
 
 }
 
-.coffee-group{
+.alimento-group{
     display: flex ;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
+    
 }
 
-.coffee-1{
+.alimento-1{
     padding: 0 25px;
+    
 }
-.coffee-1 img{
+.alimento-1 img{
     width: 200px;
 }
 
-.coffee-img {
+.alimento-img {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.coffee-1 h3{
+.alimento-1 h3{
     color: #323337;
     font-size: 20px;
     margin-bottom: 15px;
@@ -339,7 +352,7 @@ p{
     color: #323337;
 
 }
-/* footer */
+
 .text-center{
     background-color: #fcbead;
 
@@ -348,7 +361,6 @@ p{
     background-color: #fcbead;
     color: white;
 } 
-
 
 
 @media(max-width:991px){
@@ -417,6 +429,10 @@ p{
         padding: 0;
     }
 
+    .alimentos-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
     .servicios-group{
         flex-direction: column;
         margin-bottom: 0;
@@ -451,4 +467,5 @@ p{
 
     .blog-1{
         padding: 0;
-    }
+    } 
+} 
