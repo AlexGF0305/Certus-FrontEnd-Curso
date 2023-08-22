@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300&display=swap');
+
+body{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(170, 165, 165, 0.7),
+        rgba(170, 165, 165, 0.7)),
+        url(images/png.png);
+}
+ 
+.formulario{
+    background-color: #f7704a;
+    background:linear-gradient(
+        rgba(231, 142, 142, 0.7),
+        rgba(231, 142, 142, 0.7));
+        width: 500px;
+        height: 425px;
+        padding: 50px 55px;
+}
+.navbar { 
+    
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+}
+
+.container a{
+    padding: 100px;
+}
+.container-fluid{
+    background-color: #f7704a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.collapse .navbar-nav {
+    
+    background-color: #f7704a;
+    
+    
+    
+ }
+.navbar-nav a{
+    color: aliceblue;
+    text-transform: uppercase;
+    
+ }
+/*css navbar*/
+
+
+.d-grid .btn{
+    background-color: #f7704a;
+    border-color: #f7704a;
+}
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+
+    body{
+        padding: 30px;
+
+    }
+
+    form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input{
+        padding: 15px 10px;
+    }
+}
