@@ -19,6 +19,11 @@ body{
     
 }
 
+.navbar-nav a {
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
 .header{
     
     background-image: linear-gradient(
@@ -51,32 +56,6 @@ body{
     
     
 }
-
-.logo{
-    
-    color: #fffdfc;
-    font-size: 25px;
-    font-weight: 800;
-    
-}
-
-.logo img{
-    justify-content: center;
-    width: 80px;
-    cursor: pointer;
-}
-
-.logo img:hover {
-    transform: scale(1.2);
-}
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-    transition: 0,3;
-}
-
-
 
 .menu .navbar ul li a{
     font-size: 18px;
