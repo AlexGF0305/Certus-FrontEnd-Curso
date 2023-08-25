@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login y registro</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="index.html"> <!--se linkea tienda con el index-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
+</head>
+<body>
+      <!-- BOOTSTRAP Navbar (no mover) AC-->
+      <nav class="navbar navbar-expand-lg" style="background-color: #f7704a;" >
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">PETCARE</a>
+                <img src="images/logodog2.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+
+        </div>
+    </nav>
+
+  <main>
+    <div class="contenedor__todo">
+      <div class="caja__trasera">
+        <div class="caja__trasera-login">
+          <h3>¿ya tienes una cuenta?</h3>
+          <p>Inicia sesion para entrar a la pagina</p>
+          <button id="btn__iniciar-sesion">iniciar sesion</button>
+        </div>
+        <div class="caja__trasera-register">
+          <h3>¿aun no tienes cuenta?</h3>
+          <p>Registrate para iniciar sesion</p>
+          <button id="btn__registrarse">registrarse</button>
+        </div>
+      </div>
+
+
+      <div class="contenedor__login-register" id="form">
+        <form action="" class="formulario__login" id="formulario__login">
+            <h2>Iniciar sesion</h2>
+            <input type="text" placeholder="correo electronico" id="correo-electronico-login" name="correo-electronico-login">
+            <input type="password" placeholder="contraseña" id="contrasena-login" name="contrasena-login">
+            <button>entrar</button>
+        </form>
+    
+        <form action="" class="formulario__register">
+            <h2>Registrarse</h2>
+            <input type="text" placeholder="nombre completo" id="nombre-completo-registro" name="nombre-completo-registro">
+            <input type="text" placeholder="correo electronico" id="correo-electronico-registro" name="correo-electronico-registro">
+            <input type="text" placeholder="usuario" id="usuario-registro" name="usuario-registro">
+            <input type="password" placeholder="contraseña" id="contrasena-registro" name="contrasena-registro">
+            <button>registrarse</button>
+        </form>
+    </div>
+    
+      
+
+
+
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+</body>
+</html>
