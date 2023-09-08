@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300&display=swap');
+
+
+body{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(170, 165, 165, 0.7),
+        rgba(170, 165, 165, 0.7)),
+        url(images/png.png);
+}
+ 
+
+.container-fluid{
+    background-color: #f7704a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+/* Agrega este estilo CSS para hacer que la palabra "Registrar" esté en negrita */
+label[for="submit"] {
+    font-weight: bold; /* Cambia el peso de la fuente a negrita */
+}
+
+

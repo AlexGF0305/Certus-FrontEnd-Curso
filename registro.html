@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+  <body>
+    <!-- BOOTSTRAP Navbar (no mover) AC-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f7704a;" >
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">PETCARE</a>
+              <img src="images/logodog2.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+
+      </div>
+    </nav>
+<!--  -->
+    <style>
+        .success, .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0px;
+        }
+
+        .success {
+            background: rgba(244, 88, 88, 0.61);
+        }
+
+        .error {
+            background: red;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Registra tu mascota</h1>
+        <form id="mascota-form">
+            <div>
+                <label for="title">Nomre:</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Propietario:</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" class="u-full-width">
+            </div>
+            <div class="cuadroregristro">
+                <input type="submit" value="Registrar" class="u-full-width">
+            </div>
+        </form>
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Propietario</th>
+                    <th>Raza</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="mascota-list">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="registro.js"></script>
+
+        
+  
+   
+</body>
+</html>
